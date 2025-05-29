@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S M Mudassir Uddin Sarmad | Java MERN Stack Developer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+
+    <!-- Floating particles -->
+    <div class="particles"></div>
+
+    <!-- Three.js Background Canvas -->
+    <canvas id="three-canvas"></canvas>
+
+    <!-- Animated Background Elements -->
+    <div class="background-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header>
+      <div class="container">
+        <nav>
+          <a href="#" class="logo"><i class="fas fa-microchip"></i> Mudassir</a>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="hamburger">
+            <i class="fas fa-bars"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Hello, I'm <span>S.M Mudassir Uddin Sarmad</span></h1>
+          <p>
+            Java MERN Stack Developer specializing in building high-performance
+            web applications with cutting-edge technologies
+          </p>
+          <div class="hero-btns">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-img">
+            <div id="cube-container"></div>
+          </div>
+          <div class="about-text">
+            <h2>About <span>Me</span></h2>
+            <p>
+              Aspiring Java MERN Stack Developer with a strong foundation in
+              Java, Spring Boot, JPA, and Hibernate, along with front-end skills
+              in HTML, CSS, and JavaScript. Currently expanding full-stack
+              skills by learning Node.js, Express.js, and MongoDB.
+            </p>
+            <p>
+              Experienced in building backend systems with REST APIs and skilled
+              in API integration and testing. Proficient in using WebSockets for
+              real-time communication and familiar with digital analytics tools
+              for tracking user behavior.
+            </p>
+
+            <div class="info-grid">
+              <div class="info-item">
+                <i class="fas fa-user"></i>
+                <div>
+                  <h4>Name:</h4>
+                  <p>S.M Mudassir Uddin Sarmad</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <h4>Email:</h4>
+                  <p>sayedmudassir68@gmail.com</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <h4>Location:</h4>
+                  <p>Prayagraj, Uttar Pradesh</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-graduation-cap"></i>
+                <div>
+                  <h4>Education:</h4>
+                  <p>B.Tech in Electrical Engineering</p>
+                </div>
+              </div>
+            </div>
+
+            <a href="#" class="btn btn-primary">Download CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="section-title">
+          <h2>My Skills</h2>
+        </div>
+
+        <div class="skills-container">
+          <div class="skill-card">
+            <i class="fab fa-java"></i>
+            <h3>Java & Spring Boot</h3>
+            <p>
+              Backend development with Java, Spring Boot, JPA, and Hibernate.
+              Building robust REST APIs for web applications.
+            </p>
+          </div>
+
+          <div class="skill-card">
+            <i class="fab fa-react"></i>
+            <h3>React.js</h3>
+            <p>
+              Developing dynamic user interfaces with React.js, Redux for state
+              management, and modern UI components.
+            </p>
+          </div>
+
+          <div class="skill-card">
+            <i class="fas fa-database"></i>
+            <h3>Databases</h3>
+            <p>
+              MySQL, PostgreSQL, and MongoDB for efficient data storage,
+              retrieval, and management.
+            </p>
+          </div>
+
+          <div class="skill-card">
+            <i class="fas fa-code"></i>
+            <h3>Web Development</h3>
+            <p>
+              HTML5, CSS3, JavaScript for creating responsive and interactive
+              web experiences.
+            </p>
+          </div>
+
+          <div class="skill-card">
+            <i class="fas fa-chart-line"></i>
+            <h3>Analytics & Reporting</h3>
+            <p>
+              Google Analytics, Google Tag Manager for tracking user behavior
+              and creating insightful dashboards.
+            </p>
+          </div>
+
+          <div class="skill-card">
+            <i class="fas fa-tools"></i>
+            <h3>Developer Tools</h3>
+            <p>
+              VS Code, Maven, Postman, Git, GitHub for efficient development
+              workflow and collaboration.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-title">
+          <h2>My Projects</h2>
+        </div>
+
+        <div class="projects-container">
+          <div class="project-card">
+            <div class="project-img">
+              <img
+                src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Swiggato Project"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Swiggato</h3>
+              <p>
+                A robust back-end for a food delivery application with core
+                functionalities like order placement, restaurant management, and
+                delivery coordination.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Java</span>
+                <span class="project-tag">Spring Boot</span>
+                <span class="project-tag">Hibernate</span>
+                <span class="project-tag">MySQL</span>
+              </div>
+              <a href="#" class="project-link"
+                >View Project <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-img">
+              <img
+                src="https://images.unsplash.com/photo-1620336655052-b57986f5a26a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Cryptocurrency Dashboard"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Cryptocurrency Dashboard</h3>
+              <p>
+                Real-time dashboard fetching live cryptocurrency data with
+                graphical visualization and detailed comparison features.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">React</span>
+                <span class="project-tag">Redux</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">API Integration</span>
+              </div>
+              <a href="#" class="project-link"
+                >View Project <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-img">
+              <img
+                src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="API Integration"
+              />
+            </div>
+            <div class="project-content">
+              <h3>REST API Integration</h3>
+              <p>
+                Implemented RESTful APIs with Spring Boot for data retrieval and
+                manipulation, integrated with databases.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Java</span>
+                <span class="project-tag">Spring Boot</span>
+                <span class="project-tag">REST API</span>
+                <span class="project-tag">Postman</span>
+              </div>
+              <a href="#" class="project-link"
+                >View Project <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+      <div class="container">
+        <div class="section-title">
+          <h2>Training & Experience</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <span class="timeline-date">February 2023 - Present</span>
+              <h3>Acciojob - Full Stack Development</h3>
+              <p>
+                Training in Data Structures and Algorithms, enhancing
+                problem-solving skills. Completed dedicated full-time back-end
+                course with proficiency in Spring Boot. Implemented REST APIs
+                and database integration.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <span class="timeline-date">June 2019 - July 2019</span>
+              <h3>Shambhunath Institute of Engineering and Technology</h3>
+              <p>
+                Completed an internship program on Coding Skills Development.
+                Gained foundational knowledge in programming concepts and
+                problem-solving techniques.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <span class="timeline-date">2017 - 2021</span>
+              <h3>B.Tech in Electrical Engineering</h3>
+              <p>
+                Shambhunath Institute of Engineering and Technology. Coursework
+                included Data Structures, Object-Oriented Programming, DBMS, and
+                Web Development.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-title">
+          <h2>Contact Me</h2>
+        </div>
+
+        <div class="contact-container">
+          <div class="contact-info">
+            <h3>Let's Talk</h3>
+
+            <div class="contact-detail">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p>sayedmudassir68@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h4>Phone</h4>
+                <p>+91-9335809406</p>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Location</h4>
+                <p>Prayagraj, Uttar Pradesh</p>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="https://github.com/sayed-mudassir"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="https://linkedin.com/in/sayed-muddassir"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-dribbble"></i></a>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required />
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" required />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" required></textarea>
+              </div>
+
+              <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 S.M Mudassir Uddin Sarmad. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
