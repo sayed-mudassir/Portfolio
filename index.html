@@ -13,6 +13,11 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -36,7 +41,9 @@
     <header>
       <div class="container">
         <nav>
-          <a href="#" class="logo"><i class="fas fa-microchip"></i> Mudassir</a>
+          <a href="#" class="logo"
+            ><i class="fas fa-microchip"></i>Sayed Mudassir</a
+          >
           <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -56,7 +63,7 @@
     <section id="home" class="hero">
       <div class="container">
         <div class="hero-content">
-          <h1>Hello, I'm <span>S.M Mudassir Uddin Sarmad</span></h1>
+          <h1>Hello, I'm <span>S M Mudassir Uddin Sarmad</span></h1>
           <p>
             Java MERN Stack Developer specializing in building high-performance
             web applications with cutting-edge technologies
@@ -96,14 +103,14 @@
                 <i class="fas fa-user"></i>
                 <div>
                   <h4>Name:</h4>
-                  <p>S.M Mudassir Uddin Sarmad</p>
+                  <p>S M Mudassir Uddin Sarmad</p>
                 </div>
               </div>
               <div class="info-item">
                 <i class="fas fa-envelope"></i>
                 <div>
                   <h4>Email:</h4>
-                  <p>sayedmudassir68@gmail.com</p>
+                  <p>sayedmuddassir68@gmail.com</p>
                 </div>
               </div>
               <div class="info-item">
@@ -122,7 +129,7 @@
               </div>
             </div>
 
-            <a href="#" class="btn btn-primary">Download CV</a>
+            <a href="https://drive.google.com/file/d/1K2S2ef3J6V08jnXjPl542FTb0rfE6RmJ/view?usp=sharing" class="btn btn-primary">Download CV</a>
           </div>
         </div>
       </div>
@@ -146,11 +153,27 @@
           </div>
 
           <div class="skill-card">
+            <i class="fab fa-js-square"></i>
+            <h3>JavaScript</h3>
+            <p>
+              JavaScript for building dynamic, interactive user interfaces and enhancing client-side functionality.
+            </p>
+          </div>
+
+          <div class="skill-card">
             <i class="fab fa-react"></i>
             <h3>React.js</h3>
             <p>
               Developing dynamic user interfaces with React.js, Redux for state
               management, and modern UI components.
+            </p>
+          </div>
+
+          <div class="skill-card">
+           <i class="fab fa-node-js"></i>
+           <h3>Node.js & Express</h3>
+            <p>
+              Building REST APIs and handling server-side logic using Node.js and Express.js.
             </p>
           </div>
 
@@ -173,112 +196,158 @@
           </div>
 
           <div class="skill-card">
-            <i class="fas fa-chart-line"></i>
-            <h3>Analytics & Reporting</h3>
-            <p>
-              Google Analytics, Google Tag Manager for tracking user behavior
-              and creating insightful dashboards.
-            </p>
-          </div>
+  <i class="fas fa-users-cog"></i>
+  <h3>Agile Methodology</h3>
+  <p>
+    Familiar with Agile practices and collaborative development using Scrum and Kanban workflows.
+  </p>
+</div>
+
+<div class="skill-card">
+  <i class="fas fa-plug"></i>
+  <h3>API Integration</h3>
+  <p>
+    Integrating third-party APIs and testing endpoints with Postman and Swagger.
+  </p>
+</div>
+
+<div class="skill-card">
+  <i class="fab fa-git-alt"></i>
+  <h3>Git & GitHub</h3>
+  <p>
+    Version control and collaboration using Git and GitHub for streamlined development.
+  </p>
+</div>
+
+<div class="skill-card">
+  <i class="fab fa-linux"></i>
+  <h3>Linux</h3>
+  <p>
+    Comfortable using Linux-based environments for development, server management, and command-line operations.
+  </p>
+</div>
+
 
           <div class="skill-card">
+  <i class="fas fa-robot"></i>
+  <h3>Artificial Intelligence</h3>
+  <p>
+    Exploring AI concepts including machine learning fundamentals, data processing, and intelligent application development.
+  </p>
+</div>
+
+<div class="skill-card">
+  <i class="fab fa-python"></i>
+  <h3>Python</h3>
+  <p>
+    Writing clean and efficient Python code for scripting, data processing, and exploring AI and automation projects.
+  </p>
+</div>
+
+
+          <!-- <div class="skill-card">
             <i class="fas fa-tools"></i>
             <h3>Developer Tools</h3>
             <p>
               VS Code, Maven, Postman, Git, GitHub for efficient development
               workflow and collaboration.
             </p>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
-      <div class="container">
-        <div class="section-title">
-          <h2>My Projects</h2>
-        </div>
+  <div class="container">
+    <div class="section-title">
+      <h2>My Projects</h2>
+    </div>
 
-        <div class="projects-container">
-          <div class="project-card">
-            <div class="project-img">
-              <img
-                src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                alt="Swiggato Project"
-              />
-            </div>
-            <div class="project-content">
-              <h3>Swiggato</h3>
-              <p>
-                A robust back-end for a food delivery application with core
-                functionalities like order placement, restaurant management, and
-                delivery coordination.
-              </p>
-              <div class="project-tags">
-                <span class="project-tag">Java</span>
-                <span class="project-tag">Spring Boot</span>
-                <span class="project-tag">Hibernate</span>
-                <span class="project-tag">MySQL</span>
-              </div>
-              <a href="#" class="project-link"
-                >View Project <i class="fas fa-arrow-right"></i
-              ></a>
-            </div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        <!-- Project Slide 1 -->
+        <div class="swiper-slide project-card">
+          <div class="project-img">
+            <img src="/assets/swiggato1.png" alt="Swiggato Project" />
           </div>
-
-          <div class="project-card">
-            <div class="project-img">
-              <img
-                src="https://images.unsplash.com/photo-1620336655052-b57986f5a26a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                alt="Cryptocurrency Dashboard"
-              />
+          <div class="project-content">
+            <h3>Swiggato</h3>
+            <p>
+              A robust back-end for a food delivery application with core
+              functionalities like order placement, restaurant management, and
+              delivery coordination.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Java</span>
+              <span class="project-tag">Spring Boot</span>
+              <span class="project-tag">Hibernate</span>
+              <span class="project-tag">MySQL</span>
             </div>
-            <div class="project-content">
-              <h3>Cryptocurrency Dashboard</h3>
-              <p>
-                Real-time dashboard fetching live cryptocurrency data with
-                graphical visualization and detailed comparison features.
-              </p>
-              <div class="project-tags">
-                <span class="project-tag">React</span>
-                <span class="project-tag">Redux</span>
-                <span class="project-tag">JavaScript</span>
-                <span class="project-tag">API Integration</span>
-              </div>
-              <a href="#" class="project-link"
-                >View Project <i class="fas fa-arrow-right"></i
-              ></a>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="project-img">
-              <img
-                src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                alt="API Integration"
-              />
-            </div>
-            <div class="project-content">
-              <h3>REST API Integration</h3>
-              <p>
-                Implemented RESTful APIs with Spring Boot for data retrieval and
-                manipulation, integrated with databases.
-              </p>
-              <div class="project-tags">
-                <span class="project-tag">Java</span>
-                <span class="project-tag">Spring Boot</span>
-                <span class="project-tag">REST API</span>
-                <span class="project-tag">Postman</span>
-              </div>
-              <a href="#" class="project-link"
-                >View Project <i class="fas fa-arrow-right"></i
-              ></a>
-            </div>
+            <a href="https://github.com/sayed-mudassir/Swiggato.git" target="_blank" class="project-link">
+              View Project <i class="fas fa-arrow-right"></i>
+            </a>
           </div>
         </div>
+
+        <!-- Project Slide 2 -->
+        <div class="swiper-slide project-card">
+          <div class="project-img">
+            <img src="/assets/cryptoTracker.png" alt="Cryptocurrency Dashboard" />
+          </div>
+          <div class="project-content">
+            <h3>Cryptocurrency Dashboard</h3>
+            <p>
+              Real-time dashboard fetching live cryptocurrency data with
+              graphical visualization and detailed comparison features.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">Redux</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">API Integration</span>
+            </div>
+            <a href="https://crypto-dashboard-avi.netlify.app/" target="_blank" class="project-link">
+              View Project <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project Slide 3 -->
+        <div class="swiper-slide project-card">
+          <div class="project-img">
+            <img src="/assets/chatRoomApp.png" alt="Chat App" />
+          </div>
+          <div class="project-content">
+            <h3>Chat Room Application</h3>
+            <p>
+              Chat App is a real-time messaging app built with WebSockets,
+              enabling instant communication between users.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">Express Js</span>
+              <span class="project-tag">WebSockets</span>
+              <span class="project-tag">Postman</span>
+            </div>
+            <a href="https://github.com/sayed-mudassir/Chat-App.git" target="_blank" class="project-link">
+              View Project <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        </div>
+
       </div>
-    </section>
+
+      <!-- Swiper Navigation -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
 
     <!-- Experience Section -->
     <section id="experience" class="experience">
@@ -365,13 +434,15 @@
 
             <div class="social-links">
               <a href="https://github.com/sayed-mudassir"
+              target="_blank"
                 ><i class="fab fa-github"></i
               ></a>
-              <a href="https://linkedin.com/in/sayed-muddassir"
-                ><i class="fab fa-linkedin-in"></i
+              <a href="https://www.linkedin.com/in/sayed-muddassir-9901a7225/"
+                target="_blank"><i class="fab fa-linkedin-in"></i
               ></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-dribbble"></i></a>
+              <a href="https://www.instagram.com/muddassirsayed/?igsh=cnNrMXhodHM5bnVz#" target="_blank"><i class="fab fa-instagram"></i></a>
+
+              <a href="https://wa.me/9335809406?text=Hello%20there!%20I%20want%20to%20connect%20with%20you." target="_blank"><i class="fab fa-whatsapp"></i></a>
             </div>
           </div>
 
@@ -410,6 +481,31 @@
         <p>&copy; 2023 S.M Mudassir Uddin Sarmad. All Rights Reserved.</p>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+  });
+</script>
+
     <script src="script.js"></script>
   </body>
 </html>

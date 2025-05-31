@@ -52,8 +52,8 @@ function createParticles() {
 
     // Random properties
     const size = Math.random() * 3 + 2;
-    const posX = Math.random() * 100;
-    const posY = Math.random() * 100;
+    const posX = Math.random() * 1000;
+    const posY = Math.random() * 1000;
     const duration = Math.random() * 10 + 10;
     const delay = Math.random() * 5;
 
@@ -122,7 +122,7 @@ function initThreeBackground() {
     color: 0x00c896,
     wireframe: true,
     transparent: true,
-    opacity: 0.3,
+    opacity: 30,
     shininess: 100,
   });
   const innerSphere = new THREE.Mesh(innerSphereGeometry, innerSphereMaterial);
@@ -134,12 +134,13 @@ function initThreeBackground() {
   const componentMaterial = new THREE.MeshPhongMaterial({
     color: 0xff6b6b,
     shininess: 100,
-    transparent: true,
+    transparent: false,
     opacity: 0.8,
+    
   });
 
   // Create multiple floating components
-  for (let i = 0; i < 20; i++) {
+  for (let i = 0; i < 10; i++) {
     const component = new THREE.Mesh(componentGeometry, componentMaterial);
 
     // Random position around the sphere
@@ -161,7 +162,7 @@ function initThreeBackground() {
       originalX: component.position.x,
       originalY: component.position.y,
       originalZ: component.position.z,
-      speed: 0.001 + Math.random() * 0.002,
+      speed: 0.0001 + Math.random() * 0.002,
     };
 
     scene.add(component);
