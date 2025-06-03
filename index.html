@@ -13,6 +13,7 @@
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="styles.css" />
+
 </head>
 
 <body>
@@ -266,7 +267,7 @@
         <h2>My Projects</h2>
       </div>
 
-      <div class="swiper mySwiper">
+      <div class="swiper mySwiper  ">
         <div class="swiper-wrapper">
 
           <!-- Project Slide 1 -->
@@ -316,9 +317,30 @@
             </div>
           </div>
 
-
-
           <!-- Project Slide 3 -->
+          <div class="swiper-slide project-card">
+            <div class="project-img">
+              <img src="/assets/Tawakkul Foundation.png" alt="Swiggato Project" />
+            </div>
+            <div class="project-content">
+              <h3>Tawakkul Foundation</h3>
+              <p>
+                A clean and responsive charity website built with Next.js and ShadCN UI to showcase donations, meal
+                programs, and outreach efforts.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">TypeScript</span>
+                <span class="project-tag">Next Js</span>
+                <span class="project-tag">React</span>
+                <span class="project-tag">Shadcn Ui</span>
+              </div>
+              <a href="https://tawakkul-foundation.vercel.app/" target="_blank" class="project-link">
+                View Project <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project Slide 4 -->
           <div class="swiper-slide project-card">
             <div class="project-img">
               <img src="/assets/chatRoomApp.png" alt="Chat App" />
@@ -340,14 +362,19 @@
               </a>
             </div>
           </div>
+
+
         </div>
 
       </div>
 
+      <div class="swiper-scrollbar"></div>
       <!-- Swiper Navigation -->
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
+
+      <div class="swiper-button-prev custom-prev">
+      </div>
+      <div class="swiper-button-next custom-next">
+      </div>
     </div>
     </div>
   </section>
@@ -503,6 +530,15 @@
         el: ".swiper-pagination",
         clickable: true,
       },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      scrollbar: {
+        el: ".swiper-scrollbar",
+        draggable: true,
+      },
+      freeMode: true,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",

@@ -24,7 +24,44 @@ body {
   scroll-behavior: smooth;
   /* cursor: none; */
 }
+.custom-prev, .custom-next {
+    color: #892be2b7;
+    cursor: pointer;
+    padding: 100px;
+  }
 
+  .custom-prev:hover,
+  .custom-next:hover {
+    color: var(--primary);
+    filter: drop-shadow(0 0 10px var(--primary));
+  }
+
+
+  .swiper-slide {
+    background: #222;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 1.2rem;
+    width: 300px; /* controls visible size of each card */
+    flex-shrink: 0;
+  }
+
+  .swiper-scrollbar {
+    background: #444;
+  }
+
+  .swiper-scrollbar-drag {
+    background: #8a2be2; /* your glowing color */
+  }
+
+  /* .custom-prev {
+    left: 10px;
+  }
+
+  .custom-next {
+    right: 10px;
+  } */
 .custom-cursor {
   position: fixed;
   width: 20px;
@@ -1160,6 +1197,10 @@ footer p {
 
 /* Responsive Design */
 @media (max-width: 992px) {
+  .custom-prev, .custom-next {
+    padding: 0;
+    display: flex;
+  }
   .hero h1 {
     font-size: 3.5rem;
   }
